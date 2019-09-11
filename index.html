@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+body { 
+  
+  background-color: #FFF2E8;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding-top: 0px ;
+  padding-left: 30px;
+  }
+.header-right a {
+  font-family: COURIER;
+  font-weight: bold;
+  margin-right: 25px;
+  color: black;
+  background-color: #A2A5AD;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-size: 0.9vw; 
+  border-radius: 2px;
+  }
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+ .header-center{
+    font-family: times ;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    margin-left: 90px;
+    font-size: 24px;
+    text-align: left; 
+    }
+  .imgposition{
+    margin-top: 9px;
+    margin-bottom: 10px;
+  }
+
+
+.header-right {
+  margin-top: -35px;
+  float: right;
+
+}
+.abc a{
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+  font-size: 23px;
+  text-decoration: none;
+  border-right: 1.5px solid black;
+}
+.abc a:hover{
+  background-color: transparent;
+  text-decoration: underline ;
+  text-decoration-color:  red;
+}
+.abc a:last-child{
+  border: none;
+}
+@media screen and (max-width: 900px) {
+  .header-center, .header a {
+    float: none;
+    display: none;
+    text-align: left;
+  }
+}
+.imgcar{
+  font-weight: thick;
+  font-family: times;
+  padding-top: 50px;
+  padding-left: 55px;
+  padding-bottom: 50px;
+  font-size: 3.8vw;  
+  width: 100%vw;
+  height: auto;
+  background-color: black;
+  color:white;
+}
+.gadaha{
+  padding-top: 5px;
+  font-size: 22px;
+}
+.ghochu{
+  font-size: 22px;
+  padding-top: 5px;
+}
+.motu{
+  font-size: 22px;
+  padding-top: 5px;
+  margin-bottom: 12px;
+}
+ .slide1{
+
+  margin-top: -10px;
+  float: right;
+  width:55%vw;
+  margin-right: 70px;
+
+ }
+.button1 a {
+  color: white;
+  text-decoration: none;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  font-size: 21px;
+  background-color: #365C82;
+  border: 2px solid #FF4652;
+  width: 260px;
+ }
+
+ .button1 a:hover{
+ background: black;
+ }
+  .strgl{
+    font-weight: bold;
+    font-family: courier;
+    margin-top: 50px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .dww{
+    font-weight: bold;
+    font-family: courier;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-position: under;
+  }
+  .strgl2{
+
+    font-size: 28px;
+    text-align: center;
+   
+  }
+  .row1{
+    width: 100%vw;
+    height: 355px;
+
+  }
+  .row2{
+    width: 100%vw;
+    height: 355px;
+
+  }.row3{
+    width: 100%vw;
+    height: 355px;
+
+  }
+  .blue1{
+    float: left;
+    margin-left: 4vw ;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+
+    background-color: #7AB2E3;
+    width: 44vw;
+    height: auto;
+  }
+   .blue2{
+    
+    float: right;
+    margin-left: 00px ;
+    margin-top: 50px;
+    margin-right: 4vw;
+    margin-bottom: 0px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+
+    background-color: #70CFB6;
+    width: 44vw;
+    
+  }
+  .blue3{
+    float: left;
+    margin-left: 4vw ;
+    margin-right: 0px;
+    margin-top: -40px;
+    margin-bottom: 0px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+
+    background-color: #AE9CF4;
+    width: 44vw;
+    height: auto;
+  }
+   .blue4{
+   float: right;
+    margin-left: 00px ;
+    margin-right: 4vw;
+    margin-top: -40px;
+    margin-bottom: 0px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+
+    background-color: #C5EDB5;
+    width: 44vw;
+    height: auto;
+    }
+    .blue5{
+      float: left;
+    margin-left: 4vw ;
+    margin-right: 0px;
+    margin-top: -120px;
+    margin-bottom: 0px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+
+    background-color: #9CF4F4;
+    width: 44vw;
+    height: auto;
+  }
+   .blue6{
+   float: right;
+    margin-left: 00px ;
+    margin-right: 4vw;
+    margin-top: -120px;
+    margin-bottom: 0px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+
+    background-color: #EEA6A6;
+    width: 44vw;
+    height: auto;
+  }
+  .hdng1{
+    padding-top: 10px;
+    font-family: courier;
+    font-weight: bold;
+    text-align: center;
+    font-size:25px; 
+  
+  }
+  .txt1{
+    font-family: times;
+    text-align: center;
+    font-size:17px; 
+    padding-bottom: 40px;
+    padding-right: 35px;
+    padding-left: 20px;
+    padding-top: 40px;
+
+  }
+
+    .midsec{
+    height: 29vh;
+    padding-top: 2px;
+    margin-top: -150px;
+    margin-right: 30px;
+    margin-left: 55px;
+    margin-bottom: 80px;
+    background-color: #236096;
+    }
+    .mdhead{
+      padding:4px ;
+
+      margin-top:4px;
+      margin-bottom:4px;
+      margin-right:8px;
+      margin-left:5px;
+      border: 2px white solid;
+    }
+    .mdhead2{
+      padding-top: 1%;
+      padding-bottom: 30px; 
+      border: 1px dotted white;
+      text-align: center;
+      font-family: times;
+      font-size: 25px;
+      color: white;
+    }
+    .mdhead3{
+      margin-right:40% ;
+      margin-left:40% ;
+      padding-top:0.3%;
+      font-size: 1.7vw;
+      padding-bottom: 0.3%; 
+      margin-top: 2%;
+      margin-bottom: 3%;
+      border: 2px solid;
+      background-color: #EB5252  ;
+      }
+      .mdhead3:hover{
+        background-color:#262A2C; 
+      }
+      .para{
+        font-size: 15px;
+      }
+  
+    .features{
+      position: absolute;
+      margin-left: 45.7%;
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-underline-position: under;
+      font-family: courier;
+      font-size: 30px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      
+      
+    }
+    .images{
+      margin-top: 8%;
+      margin-left: 8%;
+        float: left;
+  width: 10%;
+  padding: 5px;
+  font-size: 15px;
+}
+    
+    .images2{
+      margin-top: 5%;
+      margin-left: 8%;
+      float: left;
+      width: 10%;
+      padding: 5px;
+      font-size: 15px;
+      padding-bottom: 50px;
+
+    }
+     
+      .img1:hover{
+       margin-top: -2px;
+      
+      }
+   
+   .img2:hover{
+       
+        margin-top: -2px;
+      }
+   
+    .img3:hover{
+       
+       margin-top: -2px;
+      }
+   
+    .img4:hover{
+       margin-top: -2px;
+        
+      }
+     
+    .img5:hover{
+       margin-top: 0px;
+       
+      }
+    
+    .img6:hover{
+       
+       margin-top: -2px;
+      }
+   
+    .img7:hover{
+       
+        margin-top: -2px;
+      }
+  
+    .img8:hover{
+       margin-top: -2px;
+       
+      }
+     
+    .img9:hover{
+       
+        margin-top: -2px;
+      }
+   
+    .img10:hover{
+       
+       margin-top: -2px;
+      }
+    #info1{
+      position: absolute;
+      font-size: 16px;
+      margin-left: -10px;
+      text-align: center;
+      color: `  ;
+
+    }
+    .subscriptions{
+
+      
+      margin-left: 0%;
+      text-decoration: underline;
+      text-decoration-color: red;
+      text-underline-position: under;
+      font-family: times;
+      font-size: 30px;
+      font-weight: bold;
+      padding-top: 40%;
+      letter-spacing: 0px;
+      text-align: center;
+      
+      padding-bottom: 0px;
+    }
+    a{
+      color:black;
+
+    }
+    #subs{
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 50px;
+      font-family: courier;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      color:;
+    }
+    .images3{
+      
+      max-width: 20%;
+      margin-left: 3.5%;
+      margin-top: 2%;
+      float: left;
+      margin-bottom: 0px;
+      
+      padding-left: 0.1%;
+    }
+
+  .images3:hover{
+    
+    border: solid 0.5px #BABABA;
+  }
+  .gift{
+     margin-left: 0%;
+     color: #BABABA;
+      
+      font-family: times;
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 25%;
+      letter-spacing: 0px;
+      text-align: center;
+      
+      margin-bottom: 50px;
+  
+  }
+  .footer{
+    height: 30vh;
+    padding-top:  20px;
+    padding-bottom: 40px;
+    background-color:#0A2D3B; 
+    color: white;
+  }
+  .container1{
+    height: 29vh;
+    line-height: 22px;
+    padding-left: 10%;
+    padding-top: 1%;
+    width: 14.9%;
+    float: left;
+    border-right: 1px solid white;
+    }
+    .container1:last-child{
+      border: none;
+    }
+  #nwl{
+    text-align: left;
+    font-size: 15px;
+  }
+  #copyright{
+    padding-top: 25px;
+    font-family: courier;
+    margin-left: -3vw;
+  }
+  #cont2{
+    font-size: 15px;
+    
+    font-family: courier;
+    margin-left: -60%;
+    margin-top: -5px;
+    text-align: center;
+  }
+  #cont3{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: courier;
+    margin-left: -60%;
+    margin-top: -5px;
+    text-align: center;
+
+  }
+ 
+  
+   
+  
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="imgposition">
+    <img src= "https://onestopforwriters.com/assets/logo/brand-black-8de8e413b488cc10497e519630c6b89cc20db95c12b253d9fa338fecd9f62a9d.svg" height="40px">
+  </div>
+  <div class="header-center">
+    <div class="abc"><a href="#">INFORMATION DESK</a><a href="#">THESAURUS</a><a href="#">THE STACKS</a></div>
+  <div class="header-right">
+    <a href="#">SIGN UP</a>
+    <a href="#">SIGN IN</a>
+  </div>
+  </div>
+</div>
+<div class="imgcar"><div class= "slide1"><img src="slide1.jpg" height="380px" ></div>
+  BECOME A 
+  <div class="chutiya">MASTER </div>
+  <div class="chutiya2">STORYTELLER</div>
+  <div class="gadaha">With the right tools, your writing career can soar.</div>
+  <div class="ghochu">Spellbinding worlds, unforgettable characters,</div>
+  <div class="motu">and powerful storytelling are just a click away.</div>
+  <div class="button1"><a href="#">START YOUR FREE TRIAL</a></div>
+</div>
+  <div class="strgl"> DON’T LET WRITING STRUGGLES</div>
+    <div class="dww">
+      <div class="strgl2">LIMIT YOUR POTENTIAL</div>
+    </div>
+    <div class="row1">
+  <div class= "blue1">
+    <div class="hdng1">DON'T KNOW WHAT TO WRITE?</div>
+    <div class="txt1">One Stop's signature thesaurus collection is the largest description database of its kind. With its help, you can design and write breakout characters, settings, and more—all while turning yourself into a Show-Don't-Tell ninja.
+    </div>
+  </div>
+  <div class="blue2"><div class="hdng1">DON'T KNOW WHAT TO WRITE?</div>
+    <div class="txt1">One Stop's signature thesaurus collection is the largest description database of its kind. With its help, you can design and write breakout characters, settings, and more—all while turning yourself into a Show-Don't-Tell ninja.</div>
+  </div>
+</div>
+<div class="row2">
+  <div class="blue3"><div class="hdng1">DON'T KNOW WHAT TO WRITE?</div>
+    <div class="txt1">One Stop's signature thesaurus collection is the largest description database of its kind. With its help, you can design and write breakout characters, settings, and more—all while turning yourself into a Show-Don't-Tell ninja.</div>
+  </div><div class="blue4"><div class="hdng1">DON'T KNOW WHAT TO WRITE?</div>
+    <div class="txt1">One Stop's signature thesaurus collection is the largest description database of its kind. With its help, you can design and write breakout characters, settings, and more—all while turning yourself into a Show-Don't-Tell ninja.</div>
+  </div>
+</div>
+<div class="row3">
+  <div class="blue5"><div class="hdng1">DON'T KNOW WHAT TO WRITE?</div>
+    <div class="txt1">One Stop's signature thesaurus collection is the largest description database of its kind. With its help, you can design and write breakout characters, settings, and more—all while turning yourself into a Show-Don't-Tell NINJA.</div>
+  </div>
+  <div class="blue6"><div class="hdng1">DON'T KNOW WHAT TO WRITE?</div>
+    <div class="txt1">One Stop's signature thesaurus collection is the largest description database of its kind. With its help, you can design and write breakout characters, settings, and more—all while turning yourself into a Show-Don't-Tell ninja.</div>
+  </div>
+</div>
+  <div class="midsec">
+    <div class="mdhead">
+      <div class="mdhead1">
+        <div class="mdhead2">
+          EXPLORE THE FEATURES AND TOOLS BELOW, OR CLAIM YOUR FREE TRIAL NOW.
+          <div class="mdhead3">
+            GET STARTED
+           </div>
+           <div class="para">NO CREDIT CARD REQUIRED.</div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features">FEATURES</div>
+    <div class="images">
+    <div class="img1"><img src="img1.jpg" height="120px" width= "120px"><p id="info1">CHARACTER BUILDER</p></div></div>
+    <div class="images">
+    <div class="img2"><img src="image2.gif" height="120vw" width= "120px"><p id="info1">asdasdasdasdasds</p></div></div>
+    <div class="images">
+    <div class="img3"><img src="image2.gif" height="120px" width= "120px"><p id="info1">dawdawsdasdasdas</p></div></div>
+    <div class="images">
+    <div class="img4"><img src="image2.gif" height="120px" width= "120px"><p id="info1">dawawdasdsadsdaw</p></div></div>
+    <div class="images">
+    <div class="img5"><img src="image2.gif" height="120px" width= "120px"><p id="info1">dasdaasdsdaswdaw</p></div></div>
+    <div class="images2">
+    <div class="img6"><img src="image2.gif" height="120px" width= "120px"><p id="info1">dawdsdasdasdwdaw</p></div></div>
+    <div class="images2">
+    <div class="img7"><img src="image2.gif" height="120px" width= "120px"><p id="info1">asadsdasdwdawdaw</p></div></div>
+    <div class="images2">
+    <div class="img8"><img src="image2.gif" height="120px" width= "120px"><p id="info1">dadasdaasdasddaw</p></div></div>
+    <div class="images2">
+    <div class="img9"><img src="image2.gif" height="120px" width= "120px"><p id="info1">dawdawdasadsadasw</p></div></div>
+    <div class="images2">
+    <div class="img10"><img src="image2.gif" height="120px" width= "120px"><p id="info1">dawdawdsadaawdaw</p></div></div>
+    
+    <div class="subscriptions">SUBSCRIPTIONS</div>
+    <p id="subs">Get access to the full One Stop library—including all tools, thesaurus collections, generators, tutorials, and more—with one of our subscription packages.</p>
+    
+    <div class="images3">
+      <img src="imgx.gif" width="99.9%" height="auto">
+    </div>
+    <div class="images3">      
+      <img src="imgy.gif" width="99.9%" height="auto">
+    </div>
+    <div class="images3">
+      <img src="imgz.gif" width="99.9%" height="auto">
+    </div>
+    <div class="images3">   
+      <img src="imgb.gif" width="99.9%" height="auto">
+    </div>
+    <div class="gift">GIFT CERTIFICATES AVAILABLE</div>
+    <img src="photo32.jpg" width="100%">
+    <div class="footer">
+      <div class="container1">
+        <img src="photo33.svg" width="100px" height="auto"> 
+        <p id="nwl">NEWSLETTER</p>
+        <p id="copyright">One Stop for Writers 2019.</p>
+      </div>
+      <div class="container1">
+        <p id ="cont3">QUICK LINKS AND RESOURCES</p>
+        <p id="cont2">GETTING STARTED</p>
+        <p id="cont2">PRICING AND PLANNING.</p>
+        <p id="cont2">FAQ</p>
+        <p id="cont2">MEDIA</p>
+        <p id="cont2">TESTIMONIALS</p>
+        <p id="cont2">GIFT CERTIFICATES</p>
+
+      </div>
+      <div class="container1">
+        <p id ="cont3">TERMS AND CONDITIONS</p>
+        <p id="cont2">TERMS OF USE</p>
+        <p id="cont2">PRIVACY POLICY.</p>
+        
+
+      </div>
+      <div class="container1">
+        <p id ="cont2"><img src="writers.png" height="120px"></p>
+        <p id="cont2">CONNECT WITH US</p>
+        <p id="cont2">SYMBOLS ADD KAR DUNGA AGR MANN HUA.</p>
+        
+
+      </div>
+    </div>
+    
+</body>
+</html> 
